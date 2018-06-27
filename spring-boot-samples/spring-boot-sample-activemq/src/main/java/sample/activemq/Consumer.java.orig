@@ -23,8 +23,13 @@ import org.springframework.stereotype.Component;
 public class Consumer {
 
 	@JmsListener(destination = "sample.queue")
+<<<<<<< HEAD
+	public void receiveQueue(String mText) {
+		System.out.println(mText);
+=======
 	public void receiveQueue(String pTest) {
 		System.out.println(pTest);
+>>>>>>> Rebase Check
 	}
 
 }
