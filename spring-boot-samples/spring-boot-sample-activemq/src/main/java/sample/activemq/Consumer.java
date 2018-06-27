@@ -23,8 +23,8 @@ import org.springframework.stereotype.Component;
 public class Consumer {
 
 	@JmsListener(destination = "sample.queue")
-	public void receiveQueue(String text) {
-		System.out.println(text);
+	public void receiveQueue(String mText) {
+		System.out.println(mText);
 	}
 
 }
